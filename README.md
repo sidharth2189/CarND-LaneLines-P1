@@ -6,7 +6,7 @@ A pipeline for line identification that takes road images from a video as input 
 
 2) 'test_videos' file contain front view video streams while driving a vehicle on a road.
 
-3) 'test_videos/output' contain lane detected version of the videos in 'test_videos' file
+3) 'test_videos_output' contain lane detected version of the videos in 'test_videos' file
 
 4) P1.ipynb is the code file
 
