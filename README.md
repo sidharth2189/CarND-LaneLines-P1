@@ -1,6 +1,6 @@
 # CarND-LaneLines-P1
 
-A pipeline for line identification that takes road images from a video as input and return an annotated video stream as output, with the lane lines identified on road. Some information regarding this folder as below.
+A pipeline for line identification that takes road images from a video as input and returns an annotated video stream as output, with the lane lines identified on road. Some information regarding this folder as below.
 
 1) 'test_images' file contains few images that have been lane detected. the outputs of those images are also in the same folder.
 
