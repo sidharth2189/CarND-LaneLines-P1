@@ -36,9 +36,9 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 1) I separated the points from the Hough Transform output that in terms of being part of left or right lane by figuring out their slopes.
 A negative slope refers to left lane and a positive one refers to right lane.
 2) I averaged the slope of the segments formed, to obtain an average slope for the left lane and one for the right lane.
-3) With average slopes and intercepts calculated for the left lane and right lane lines, I calculated the bottom left and right vertices using the line equation (Y = slope * X + Intercept) and assuming Y to be the end of the Y axis of the image. This helps in marking the lane line all the way to the bottom.
-4) I now figured out the top left and right vertices. The top left vertex is the right most point in the left lane cluster of points (found in step 1). The top right vertex is the left most point in the right lane cluster of points (found in step 1) 
-5) Now having gotten the vertices, I draw the single lane lines for left and right side using the cv2.line function
+3) With average slopes and intercepts calculated for the left lane and right lane lines, I further calculated the bottom left and right vertices using the line equation (Y = slope * X + Intercept) and assuming Y to be the end of the Y axis of the image. This helps in marking the lane line all the way to the bottom.
+4) I now have figured out the top left and right vertices. The top left vertex is the right most point in the left lane cluster of points (found in step 1). The top right vertex is the left most point in the right lane cluster of points (found in step 1) 
+5) Now having gotten the vertices, I drew the single lane lines for left and right side using the cv2.line function
 
 
 ### 2. Identify potential shortcomings with your current pipeline
