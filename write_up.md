@@ -33,7 +33,7 @@ My pipeline consisted of following 7 steps.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function. This was done in following steps
 
-1) I separated the points from the Hough Transform output that in terms of being part of left or right lane by figuring out their slopes.
+1) I separated the points from the Hough Transform output in terms of being part of left or right lane by figuring out their slopes.
 A negative slope refers to left lane and a positive one refers to right lane.
 2) I averaged the slope of the segments formed, to obtain an average slope for the left lane and one for the right lane.
 3) With average slopes and intercepts calculated for the left lane and right lane lines, I further calculated the bottom left and right vertices using the line equation (Y = slope * X + Intercept) and assuming Y to be the end of the Y axis of the image. This helps in marking the lane line all the way to the bottom.
