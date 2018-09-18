@@ -53,6 +53,6 @@ Further if the illumination changes, because of alternating sun and shade on the
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to be able to identify lane lines irrespective of intrusion of higher gradient changes like when it happens because of sudden change of illumination on the road 
+A possible improvement would be the addition of ability to identify lane lines irrespective of intrusion of higher gradient changes like when it happens because of sudden change of illumination on the road 
 
 Another potential improvement could be to express the co-ordinates of the vertices in percentage of the img.shape values so that the frame size would matter less.
