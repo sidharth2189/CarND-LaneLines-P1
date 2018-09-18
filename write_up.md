@@ -48,9 +48,11 @@ One potential shortcoming of the pipeline, would be when a vehicle hits sharp cu
 
 Another shortcoming could be, the logic of the code perhaps takes a hit, if the input video stream contains a lane change maneuver. Of course then, the region of interest is unable to shift dynamically and lane detection through this pipeline may go awry.
 
+Further if the illumination changes, because of alternating sun and shade on the road, the edge detection picks up the sun-shade contrast lines instead of lane lines because the gradient in the former is higher. This is a scenario in challenge.mp4 video in the file 'test_videos'
+
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to 
+A possible improvement would be to be able to identify lane lines irrespective of intrusion of higher gradient changes like when it happens because of sudden change of illumination on the road 
 
-Another potential improvement could be to ...
+Another potential improvement could be to express the co-ordinates of the vertices in percentage of the img.shape values so that the frame size would matter less.
