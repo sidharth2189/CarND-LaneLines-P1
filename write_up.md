@@ -44,7 +44,7 @@ A negative slope refers to left lane and a positive one refers to right lane.
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming of the pipeline, would be when a vehicle hits sharp curves. For example in step 1 while descrbing the draw_lines() function in previous answer, the vaules in the limit value for slopes are set to slope > 0.5 instead of just slope > 0 for right lane and slope < -0.5 for left lane instead of just slope < 0. The reason for this is that in the annotated video, at brief points there can be lane lines generated that depart off the lane and hence the slope limtation helps lane detection stay on course throughout the video. So when curve is approache, the slope limit values may cause lane line go unacknowledged.
+One potential shortcoming of the pipeline, would be when a vehicle hits sharp curves. For example in step 1 while descrbing the draw_lines() function in previous answer, the vaules in the limit value for slopes are set to slope > 0.5 instead of just slope > 0 for right lane and slope < -0.5 for left lane instead of just slope < 0. The reason for this is that in the annotated video, at brief points there can be lane lines generated that depart off the lane and hence the slope limtation helps lane detection stay on course throughout the video. So when curve approaches, the slope limit values may cause lane line go unacknowledged.
 
 Another shortcoming could be, the logic of the code perhaps takes a hit, if the input video stream contains a lane change maneuver. Of course then, the region of interest is unable to shift dynamically and lane detection through this pipeline may go awry.
 
