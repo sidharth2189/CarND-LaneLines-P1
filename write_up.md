@@ -50,6 +50,10 @@ Another shortcoming could be, the logic of the code perhaps takes a hit, if the 
 
 Further if the illumination changes, because of alternating sun and shade on the road, the edge detection picks up the sun-shade contrast lines instead of lane lines because the gradient in the former is higher. This is a scenario in challenge.mp4 video in the file 'test_videos'
 
+Note:
+For the challenge.mp4, the region vertices are only changed which are as below
+vertices = np.array([[(250, 650), (600, 450), (750, 450), (1100, 650)]], dtype=np.int32)
+
 
 ### 3. Suggest possible improvements to your pipeline
 
