@@ -10,4 +10,4 @@ A pipeline for line identification that takes road images from a video as input 
 
 4) P1.ipynb is the code file
 
-5) write_up.md is about the how the project objectives were approached.
+5) write_up.md explains how the project objectives were approached.
